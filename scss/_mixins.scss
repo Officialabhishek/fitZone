@@ -1,5 +1,17 @@
+@mixin fontProp($fontSize, $fontWeight, $fontFamily) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    font-family: $fontFamily;
+}
+
 @mixin display {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@mixin btn-all($btn-color, $btn-bg, $btn-border) {
+    color: $btn-color;
+    background-color: $btn-bg;
+    border: $btn-border;
 }
