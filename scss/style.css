@@ -1,1 +1,179 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500&display=swap");/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #dedede;
+}
+
+#title {
+  background-color: #000000;
+  padding: 1% 15%;
+}
+
+.title-body {
+  padding: 5% 0 0 0;
+}
+
+.title-body .col-lg-6 h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 15%;
+  color: #ffffff;
+}
+
+.title-body .title-body-right p {
+  color: #dedede;
+}
+
+.title-body .title-body-right .btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  margin: 1.5rem 1rem 0 0;
+  text-transform: uppercase;
+}
+
+.title-body .title-body-right .orangebtn {
+  color: #ffffff;
+  background-color: #ff4d00;
+  border: none;
+}
+
+.title-body .title-body-right .orangebtn:hover {
+  color: #ff4d00;
+  background-color: #dedede;
+  border: none;
+}
+
+#sponsor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3% 0;
+  background-color: #000000;
+}
+
+.sponsor-image {
+  margin-left: 6rem;
+  width: 14rem;
+  height: 5rem;
+}
+
+.sponsor-image:first-child {
+  margin-left: 0;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  #title {
+    padding: 1% 10%;
+    text-align: center;
+  }
+  .title-body {
+    padding: 2% 0 2% 0;
+  }
+  #sponsor {
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sponsor-image {
+    margin-left: 0;
+  }
+}
+@media (max-width: 992px) {
+  .title-body-leftside {
+    display: none;
+  }
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #title {
+    padding: 1% 10%;
+    text-align: center;
+  }
+  .title-body {
+    padding: 0;
+  }
+}
+.container-fluid .navbar-brand {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+}
+
+.container-fluid .navbar-brand:hover {
+  color: #ffffff;
+}
+
+.nav-item .nav-link .active {
+  color: #ffffff;
+}
+
+.navbar-brand:hover, .nav-item .nav-link {
+  color: #bfbfbf;
+}
+
+.nav-item .nav-link:hover {
+  color: #ff4d00;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item:first-child {
+  margin-left: 0;
+}
+
+.nav-item .btn {
+  font-size: 1.4rem;
+}
+
+.nav-item .btn-warning {
+  color: #ffffff;
+  background-color: #ff4d00;
+  border: none;
+}
+
+.nav-item .btn-warning:hover {
+  color: #ff4d00;
+  background-color: #dedede;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=style.css.map */

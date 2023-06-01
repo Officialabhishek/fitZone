@@ -1,0 +1,33 @@
+.container-fluid .navbar-brand {
+    @include fontProp(3rem, 500, ('Ubuntu', sans-serif));
+    color: $main-light-color;
+}
+.container-fluid .navbar-brand:hover {
+    color: $main-light-color;
+}
+.nav-item .nav-link .active{
+    color: $main-light-color;
+}
+.navbar-brand:hover, .nav-item .nav-link{
+    color: $main-light2-color;
+}
+.nav-item .nav-link:hover{
+    color: $main-color;
+}
+.navbar-nav .nav-item {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+.navbar-nav .nav-item:first-child {
+    margin-left: 0;
+}
+.nav-item .btn {
+    font-size: 1.4rem;
+}
+.nav-item .btn-warning  {
+    @include btn-all($main-light-color, $main-color, none);
+}
+
+.nav-item .btn-warning:hover {
+    @include btn-all($main-color, $main-light1-color, none);
+}

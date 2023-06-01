@@ -1,0 +1,88 @@
+#title {
+    background-color: $main-dark-color;
+    padding: 1% 15%;
+}
+
+.title-body {
+    padding: 5% 0 0 0;
+}
+
+.title-body .col-lg-6 h1{
+    @include fontProp(5rem, 800, ('Montserrat', sans-serif));
+    margin-top: 15%;
+    color: $main-light-color;
+}
+
+.title-body .title-body-right p {
+    color: $main-light1-color;
+}
+
+.title-body .title-body-right .btn {
+    @include fontProp(1.2rem, 600, ('Montserrat', sans-serif));
+    margin: 1.5rem 1rem 0 0;
+    text-transform: uppercase;
+}
+.title-body .title-body-right .orangebtn {
+    @include btn-all($main-light-color, $main-color, none);
+}
+
+.title-body .title-body-right .orangebtn:hover {
+    @include btn-all($main-color, $main-light1-color, none);
+}
+
+#sponsor {
+    @include display;
+    padding: 3% 0;
+    background-color: $main-dark-color;
+}
+
+.sponsor-image {
+    margin-left: 6rem;
+    width: 14rem;
+    height: 5rem;
+}
+
+.sponsor-image:first-child {
+    margin-left: 0;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+
+    #title {
+        padding: 1% 10%;
+        text-align: center;
+    }
+
+    .title-body {
+        padding: 2% 0 2% 0;
+    }
+    #sponsor {
+        padding: 5% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponsor-image {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .title-body-leftside {
+        display: none;
+    }
+}
+
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    #title {
+        padding: 1% 10%;
+        text-align: center;
+    }
+    .title-body {
+        padding: 0;
+    }
+}
