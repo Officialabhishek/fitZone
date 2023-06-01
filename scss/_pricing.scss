@@ -1,0 +1,79 @@
+#pricing {
+    padding: 3% 15%;
+    background-color: $main-bg-color;
+
+    .row {
+        text-align: center;
+
+        .price-h2 {
+            @include fontProp(3.1rem, 700, ('Montserrat', sans-serif));
+        }
+
+        .price-p {
+            @include fontProp(2rem, 400, ('Montserrat', sans-serif));
+            margin: 0.5rem 0 5rem 0;
+        }
+    }
+    .card {
+        border: none;
+        border-radius: 2rem;
+    }
+}
+
+#pricing .card-body {
+    padding: 2rem 2rem;
+    background-color: $main-light-color;
+    border-radius: 2rem;
+
+    p , .priceamount , .pricelist {
+        @include fontProp(1.2rem,500,('Montserrat', sans-serif));
+        color: $main-light2-color;
+        line-height: 3rem;
+    }
+
+    .priceamount span {
+        @include fontProp(2.5rem,700,('Montserrat', sans-serif));
+        color: $main-dark-color;
+    }
+
+    a {
+        display: block;
+        @include fontProp(1.2rem,500,('Montserrat', sans-serif));
+        @include btn-all($main-dark-color, $main-light2-color, none);
+        margin-top: 4rem;
+    }
+
+}
+
+#pricing .card-body .fortag {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    .tagbtn {
+        padding: 0.5rem;
+        border-radius: 1rem;
+        @include fontProp(1.2rem,500,('Montserrat', sans-serif));
+        @include btn-all($main-dark-color, $main-light2-color, none);
+    }
+}
+
+#pricing .card-title {
+    @include fontProp(2rem,600,('Montserrat', sans-serif));
+    color: $main-dark-color;
+}
+
+#pricing .card-body:hover {
+    background-color: $main-dark-color;
+
+    .priceamount span , .card-title {
+        color: $main-light-color;
+    }
+    .pricelist, p {
+        color: $main-light1-color;
+    }
+    a , .tagbtn {
+        @include btn-all($main-light1-color, $main-color, none);
+    }
+
+}

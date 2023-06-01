@@ -1,0 +1,73 @@
+#classes {
+    text-align: center;
+    padding: 8% 15% 0;
+    background-color: $main-bg-color;
+}
+
+#classes .row {
+    h2{
+        @include fontProp(3.1rem, 700, ('Montserrat', sans-serif));
+    }
+
+    .class-p {
+        @include fontProp(2rem, 400, ('Montserrat', sans-serif));
+        margin: 0.5rem 0 5rem 0;
+    }
+
+    .btn-dark {
+        margin: 4rem auto 5rem auto;
+        width: fit-content;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+    }
+}
+ 
+.card {
+    text-align: left;
+    border-radius: 1rem;
+}
+
+#classes .card-body {
+
+    .card-title {
+        @include fontProp(1.5rem, 500, ('Montserrat', sans-serif));
+    }
+
+   .card-text {
+       @include btn-all($main-light2-color, $main-light1-color, none);
+       width: max-content;
+       padding: 0.5rem 1rem;
+       border-radius: 0.5rem;
+       margin-top: 2rem;
+       text-transform: uppercase;
+    }
+
+    .btn-link {
+        color: $main-light2-color;
+        @include fontProp(1.2rem, 400, ('Montserrat', sans-serif));
+    }
+
+    .card-maintext {
+        @include fontProp(2rem, 500, ('Montserrat', sans-serif));
+    }
+} 
+
+
+#gallery h2 {
+    @include fontProp(3.1rem, 700, ('Montserrat', sans-serif));
+    margin-bottom: 3rem;
+}
+.gallery-col img {
+    width: 25rem;
+}
+
+@media (max-width: 1028px) {
+
+    #classes .row .class-p {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        margin: 2rem 0;;
+    }
+}
