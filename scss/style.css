@@ -86,7 +86,6 @@ a {
   margin-left: 0;
 }
 
-/* Media Query for Mobile Devices */
 @media (max-width: 767px) {
   #title {
     padding: 1% 10%;
@@ -110,7 +109,6 @@ a {
     display: none;
   }
 }
-/* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px) {
   #title {
     padding: 1% 10%;
@@ -166,6 +164,241 @@ a {
   color: #ff4d00;
   background-color: #dedede;
   border: none;
+}
+
+#classes {
+  text-align: center;
+  padding: 8% 15% 0;
+  background-color: rgba(243, 243, 243, 0.651);
+}
+
+#classes .row h2 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+#classes .row .class-p {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  margin: 0.5rem 0 5rem 0;
+}
+#classes .row .btn-dark {
+  margin: 4rem auto 5rem auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
+
+.card {
+  text-align: left;
+  border-radius: 1rem;
+}
+
+#classes .card-body .card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+#classes .card-body .card-text {
+  color: #bfbfbf;
+  background-color: #dedede;
+  border: none;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+#classes .card-body .btn-link {
+  color: #bfbfbf;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+#classes .card-body .card-maintext {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+#gallery h2 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 3rem;
+}
+
+.gallery-col img {
+  width: 25rem;
+}
+
+@media (max-width: 1028px) {
+  #classes .row .class-p {
+    font-size: 1.5rem;
+  }
+  .card {
+    margin: 2rem 0;
+  }
+}
+#pricing {
+  padding: 3% 15%;
+  background-color: rgba(243, 243, 243, 0.651);
+}
+#pricing .row {
+  text-align: center;
+}
+#pricing .row .price-h2 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+#pricing .row .price-p {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  margin: 0.5rem 0 5rem 0;
+}
+#pricing .card {
+  border: none;
+  border-radius: 2rem;
+}
+
+#pricing .card-body {
+  padding: 2rem 2rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
+}
+#pricing .card-body p, #pricing .card-body .priceamount, #pricing .card-body .pricelist {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #bfbfbf;
+  line-height: 3rem;
+}
+#pricing .card-body .priceamount span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+#pricing .card-body a {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  background-color: #bfbfbf;
+  border: none;
+  margin-top: 4rem;
+}
+
+#pricing .card-body .fortag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#pricing .card-body .fortag .tagbtn {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  background-color: #bfbfbf;
+  border: none;
+}
+
+#pricing .card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+
+#pricing .card-body:hover {
+  background-color: #000000;
+}
+#pricing .card-body:hover .priceamount span, #pricing .card-body:hover .card-title {
+  color: #ffffff;
+}
+#pricing .card-body:hover .pricelist, #pricing .card-body:hover p {
+  color: #dedede;
+}
+#pricing .card-body:hover a, #pricing .card-body:hover .tagbtn {
+  color: #dedede;
+  background-color: #ff4d00;
+  border: none;
+}
+
+#footer {
+  background-color: #000000;
+}
+
+.footer-body {
+  padding: 5% 12% 0 12%;
+}
+
+.footer-body .col p {
+  color: #ffffff;
+}
+
+.footer-body .firstrow .col a {
+  color: #dedede;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.footer-body button {
+  color: #ffffff;
+  background-color: transparent;
+  border: 0.1rem solid #bfbfbf;
+  padding: 3% 4%;
+  font-size: 1.5rem;
+}
+
+.footer-body button:hover {
+  color: #ff4d00;
+  background-color: #bfbfbf;
+  border: none;
+}
+
+.footer-end {
+  padding: 3rem 0 1.5rem 0;
+}
+
+.footer-end .col-6 .copy a {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #bfbfbf;
+  text-decoration: none;
+}
+
+.footer-end .navbar-brand {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+}
+
+.footer-end .navbar-brand:hover {
+  color: #ffffff;
+}
+
+.footer-end .linksss {
+  text-align: center;
+}
+
+.footer-end .linksss a {
+  margin: 0 1rem;
+  color: #dedede;
+}
+
+.footer-end .linksss a:hover {
+  color: #ff4d00;
 }
 
 html {
